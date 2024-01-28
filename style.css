@@ -1004,7 +1004,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4%;
+    padding: 3%;
 }
 
 .review_box ul li:nth-child(2) .pr_btn button p {
@@ -1452,3 +1452,10 @@ footer .footer_div .link2 h2 {
         font-size: .8rem;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .selling_product .heading h5
+  {
+      font-size: 1.6rem;
+    }
+  }
