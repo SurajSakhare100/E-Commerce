@@ -297,3 +297,139 @@ text-align: center;
   justify-content: center;
 }
 }
+.contact_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    }
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("homepage img/leaves-img.png");
+    background-repeat: no-repeat;
+    background-size: 28% auto;
+    opacity: .3;
+    position: absolute;
+    background-position: bottom right;
+    mix-blend-mode: multiply;
+    z-index: 9999;
+}
+.contact_box{
+    width: 100%;
+    height: auto;
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(184, 47, 47, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+}
+.contact_box .contact_box_content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cbox{
+    width: 30%;
+    padding: 40px;
+    border: 1px solid rgb(165, 165, 165);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.cbox i{
+    font-size: 30px;
+    color: #6A9739;
+}
+.question{
+width: 100%;
+height: auto;
+padding: 4em 16em;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+z-index:99999999999;
+}
+.left{
+width: 44%;
+}
+.right{
+    width: 44%;
+}
+.boxtitle{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.block{
+    padding-bottom: 2em;
+    padding-top: 1em;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.bblock{
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 500px) {
+    .contact_box_content
+  {
+      flex-wrap: wrap;
+      gap: 20px;
+
+    }
+    .cbox{
+        width: 100%;
+        padding: 20px;
+    }
+    .about-content .about-heading h3{
+        font-size: 2rem;
+    }
+    .about-content .about-heading .leafbox .leaf
+{
+  top: 10%;
+  width: 25%;
+}
+.question{
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 20px ;
+}
+.left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bblock{
+    width: 100%;
+}
+.boxtitle{
+    width: 100%;
+}
+.contact_container{
+    position: relative;
+    height: fit-content;
+    padding: 10px;
+    padding-top: 30px;
+}
+.bg{
+    height: 100%;
+}
+h1{
+    font-size: 20px;
+}
+  }

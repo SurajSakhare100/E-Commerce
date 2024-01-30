@@ -19,17 +19,18 @@
             <div class="navbar_content">
                 <div class="left_nav">
                     <div class="nav_logo">
-<a href="index.html">
-    <img  src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg">
+                        <a href="index.html">
+                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg">
 
-</a>                    </div>
+                        </a>
+                    </div>
                     <ul>
-                        <li><a href="#">Everything</a></li>
-                        <li><a href="#">
+                        <li><a href="groceries.html">Everything</a></li>
+                        <li><a href="groceries.html">
                                 Groceries
 
                             </a></li>
-                        <li><a href="#">Juice</a></li>
+                        <li><a href="groceries.html">Juice</a></li>
                     </ul>
                 </div>
                 <div class="right_nav">
@@ -47,11 +48,11 @@
         </div>
         <div id="popbox" class="hide">
             <li id="remove"><i class="bi bi-x"></i></li>
-            <li class="green_tag"><a href="#">Everthing</a></li>
-            <li class="green_tag"><a href="#">Groceries</a> </li>
-            <li class="green_tag"><a href="#">Juice</a> </li>
-            <li class="green_tag"><a href="#">About</a></li>
-            <li class="green_tag"><a href="#">Contact</a></li>
+            <li class="green_tag"><a href="groceries.html">Everthing</a></li>
+            <li class="green_tag"><a href="groceries.html">Groceries</a> </li>
+            <li class="green_tag"><a href="groceries.html">Juice</a> </li>
+            <li class="green_tag"><a href="about.html">About</a></li>
+            <li class="green_tag"><a href="contact.html">Contact</a></li>
             <li class="green_tag"><a href="form.html">Form</a></li>
 
         </div>
@@ -61,11 +62,22 @@
             <p>Shopping Cart </p>
             <i id="cut_click" class="bi bi-x"></i>
         </div>
-        <div class="cart"><p>
-            No products in the cart.
-        </p></div>
-        <div id="shop_btn"><a href="form.html">Continue Shopping</a></div>
-        
+        <div class="cart" id="cardBox" style="display: flex; flex-direction: column;">
+            <p id="non">
+                No products in the cart.
+            </p>
+        </div>
+        <div style="background-color: #fff;width: 100%;
+        position: absolute;
+        bottom: 20px;
+        margin: auto;">
+            <div
+                style=" width: 100%; border-bottom:1px solid #9a9a9a;border-top:1px solid #9a9a9a; padding: 15px; text-align: center; display: flex; justify-content: space-between; margin: 10px 0;">
+                <div>subtotal: </div>
+                <div id="total">0.00</div>
+            </div>
+            <div id="shop_btn"><a href="form.html">Continue Shopping</a></div>
+        </div>
     </section>
     <div class="about-content">
         <div class="about-heading">

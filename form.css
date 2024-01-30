@@ -42,16 +42,25 @@ input[type=number] {
     flex-direction: column;
 }
 
-table {
+.your_order_box table {
     width: 100%;
     padding: 4% 0;
+    border-collapse: collapse;
+    border: none;
 }
 
-table tr {
+.your_order_box table tr {
     height: 40px;
+    border-bottom: 1px solid #eee;
+}
+.your_order_box table td {
+   border: 0;
+}
+.your_order_box table th {
+   border: 0;
 }
 
-table tr:nth-child(1) {
+.your_order_box table tr:nth-child(1) {
     text-align: left;
 }
 
@@ -81,7 +90,7 @@ table tr:nth-child(1) {
     margin: 0;
 
 }
-thead {
+.your_order_box thead {
     border-bottom: 1px solid black;
 }
 
@@ -112,11 +121,11 @@ select option:hover {
     margin-bottom: 1.5%;
 }
 
-th:nth-last-child(1) {
+.your_order_box th:nth-last-child(1) {
     text-align-last: right;
 }
 
-td:nth-last-child(1) {
+.your_order_box td:nth-last-child(1) {
     text-align-last: right;
 }
 
@@ -210,4 +219,81 @@ width: 100%;
   table{
     padding: 0;
   }
+}
+#primary {
+    width: 100%;
+    padding: 4em;
+    background-color: #F8F6F3;
+}
+@media screen and (max-width: 500px) {
+#primary {
+    width: 100%;
+    padding: 4em 20px;
+    background-color: #F8F6F3;
+}}
+#primary main{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#primary main .content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.orderbox{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.orderbox li{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 2px;
+    padding-right:20px ;
+    border-right: 1px solid #a4a4a4a5;
+}
+.orderbox li strong{
+   font-weight: bold;
+   font-size: 16px;
+}
+#primary main .order_details{
+    width: 100%;
+
+}
+#primary main .order_details table{
+   width: 100%;
+   margin-bottom: 2em;
+   padding: 0;
+}
+#primary main .order_details table thead{
+    width: 100%;
+}
+#primary main .order_details table, td,th{
+    text-align: left;
+    padding: 2px 0;
+    padding-left: 20px;
+    font-weight: normal;
+    margin: 0;
+   border: 1px solid rgb(112, 112, 112);
+   border-collapse: collapse;
+
+}
+#primary main.order_details table thead tr,tbody tr,tfoot tr{
+    width: 50%;
+}
+.strong{
+    font-weight: bold;
+}
+.order_details h2{
+   width: 100%;
+   border: 1px solid rgb(112, 112, 112);
+   background-color: #FBFBFB;
+   padding: 20px ;
+   border-bottom: 0;
+   font-weight: 600;
+   inset:inherit;
 }

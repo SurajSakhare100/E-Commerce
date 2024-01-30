@@ -19,16 +19,18 @@
             <div class="navbar_content">
                 <div class="left_nav">
                     <div class="nav_logo">
-                        <img
-                            src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg">
+                        <a href="index.html">
+                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg">
+
+                        </a>
                     </div>
                     <ul>
-                        <li><a href="#">Everything</a></li>
-                        <li><a href="#">
+                        <li><a href="groceries.html">Everything</a></li>
+                        <li><a href="groceries.html">
                                 Groceries
 
                             </a></li>
-                        <li><a href="#">Juice</a></li>
+                        <li><a href="groceries.html">Juice</a></li>
                     </ul>
                 </div>
                 <div class="right_nav">
@@ -46,11 +48,11 @@
         </div>
         <div id="popbox" class="hide">
             <li id="remove"><i class="bi bi-x"></i></li>
-            <li class="green_tag"><a href="#">Everthing</a></li>
-            <li class="green_tag"><a href="#">Groceries</a> </li>
-            <li class="green_tag"><a href="#">Juice</a> </li>
-            <li class="green_tag"><a href="#">About</a></li>
-            <li class="green_tag"><a href="#">Contact</a></li>
+            <li class="green_tag"><a href="groceries.html">Everthing</a></li>
+            <li class="green_tag"><a href="groceries.html">Groceries</a> </li>
+            <li class="green_tag"><a href="groceries.html">Juice</a> </li>
+            <li class="green_tag"><a href="about.html">About</a></li>
+            <li class="green_tag"><a href="co">Contact</a></li>
             <li class="green_tag"><a href="form.html">Form</a></li>
 
         </div>
@@ -124,11 +126,22 @@
             <p>Shopping Cart </p>
             <i id="cut_click" class="bi bi-x"></i>
         </div>
-        <div class="cart"><p>
-            No products in the cart.
-        </p></div>
-        <div id="shop_btn"><a href="form.html">Continue Shopping</a></div>
-        
+        <div class="cart" id="cardBox" style="display: flex; flex-direction: column;">
+            <p id="non">
+                No products in the cart.
+            </p>
+        </div>
+        <div style="background-color: #fff;width: 100%;
+        position: absolute;
+        bottom: 20px;
+        margin: auto;">
+            <div
+                style=" width: 100%; border-bottom:1px solid #9a9a9a;border-top:1px solid #9a9a9a; padding: 15px; text-align: center; display: flex; justify-content: space-between; margin: 10px 0;">
+                <div>subtotal: </div>
+                <div id="total">0.00</div>
+            </div>
+            <div id="shop_btn"><a href="form.html">Continue Shopping</a></div>
+        </div>
     </section>
     <section class="selling_product">
         <div class="heading">
@@ -137,7 +150,7 @@
         <div class="img_leaf"><img src="img/logo-leaf-new.png" width="75px" height="33px"></div>
         <ul>
             <!-- <div class="sale">sale!</div> -->
-            <li class="item">
+            <li class="itemBox">
                 <div class="card_img">
                     <img src="card_img/coffee-asorted-400x400.jpg" width="300px" height="300px">
                 </div>
@@ -145,13 +158,13 @@
                     <span>
                         <p>Groceries</p>
                     </span>
-                    <h3>Assorted Coffee</h3>
+                    <h3 class="itemTag">Assorted Coffee</h3>
                     <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                             class="bi bi-star"></i><i class="bi bi-star"></i></div>
-                    <span><b>£35.00</b></span>
+                    <span><b class="itemPrice">£35.00</b></span>
                 </div>
             </li>
-            <li class="item">
+            <li class="itemBox">
                 <div class="card_img">
                     <img src="card_img/sanitizer.jpg" width="300px" height="300px">
                 </div>
@@ -159,13 +172,13 @@
                     <span>
                         <p>Groceries</p>
                     </span>
-                    <h3>Hand Sanitizer</h3>
+                    <h3 class="itemTag">Hand Sanitizer</h3>
                     <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                             class="bi bi-star"></i><i class="bi bi-star"></i></div>
-                    <span><b>15.00</b></span>
+                    <span><b class="itemPrice">15.00</b></span>
                 </div>
             </li>
-            <li class="item">
+            <li class="itemBox">
                 <div class="card_img">
                     <img src="card_img/red-chillies-400x400.jpg" width="300px" height="300px">
                 </div>
@@ -173,13 +186,13 @@
                     <span>
                         <p>Groceries</p>
                     </span>
-                    <h3>Handpicked Red Chillies</h3>
+                    <h3 class="itemTag">Handpicked Red Chillies</h3>
                     <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                             class="bi bi-star"></i><i class="bi bi-star"></i></div>
-                    <span><b>£19.00</b></span>
+                    <span><b class="itemPrice">£19.00</b></span>
                 </div>
             </li>
-            <li class="item">
+            <li class="itemBox">
                 <div class="card_img">
                     <img src="card_img/edible-oil-400x400.jpg" width="300px" height="300px">
                 </div>
@@ -187,12 +200,12 @@
                     <span>
                         <p>Groceries</p>
                     </span>
-                    <h3>Natural Extracted Edible Oil</h3>
+                    <h3 class="itemTag"> Natural Extracted Edible Oil</h3>
                     <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                             class="bi bi-star"></i><i class="bi bi-star"></i></div>
                     <span>
                         <p style="text-decoration: line-through; color: gray; margin-right: 5%; font-weight: 500;">
-                            £17.00</p><b>£25.00</b>
+                            £37.00</p><b class="itemPrice">£25.00</b>
                     </span>
                 </div>
             </li>
@@ -208,7 +221,7 @@
         <div class="product_showcase">
             <div class="pr" id="pr1">
                 <div class="product_text">
-                    <h3>Farm Fresh Fruits</h3>
+                    <h3 >Farm Fresh Fruits</h3>
                     <p>Ut sollicitudin quam vel purus tempus, vel eleifend felis varius.</p>
                 </div>
                 <div class="pr_btn">
@@ -216,7 +229,7 @@
                 </div>
             </div>
             <div class="pr" id="pr2">
-                <div class="product_text">
+                <div >
                     <h3>Fresh Vegetables</h3>
                     <p>Aliquam porta justo nibh, id laoreet sapien sodales vitae justo.</p>
                 </div>
@@ -225,8 +238,8 @@
                 </div>
             </div>
             <div class="pr" id="pr3">
-                <div class="product_text">
-                    <h3>Organic Legume</h3>
+                <div>
+                    <h3 >Organic Legume</h3>
                     <p>Phasellus sed urna mattis, viverra libero sed, aliquam est.</p>
                 </div>
                 <div class="pr_btn">
@@ -256,7 +269,7 @@
             <div class="img_leaf"><img src="img/logo-leaf-new.png" width="75px" height="33px"></div>
             <ul>
                 <!-- <div class="sale">sale!</div> -->
-                <li class="card_img_list">
+                <li class="card_img_list itemBox">
                     <div class="card_img">
                         <img src="card_img/coffee-asorted-400x400.jpg" width="300px" height="300px">
                     </div>
@@ -264,13 +277,13 @@
                         <span>
                             <p>Juice </p>
                         </span>
-                        <h3>Fresh Orange Juice</h3>
+                        <h3 class="itemTag">Fresh Orange Juice</h3>
                         <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                                 class="bi bi-star"></i><i class="bi bi-star"></i></div>
-                        <span><b>£18.00</b></span>
+                        <span><b class="itemPrice">£18.00</b></span>
                     </div>
                 </li>
-                <li class="card_img_list">
+                <li class="card_img_list itemBox">
                     <div class="card_img">
                         <img src="card_img/orage-juice-kariz-400x400.jpg" width="300px" height="300px">
                     </div>
@@ -278,13 +291,13 @@
                         <span>
                             <p>Groceries</p>
                         </span>
-                        <h3>Hand Sanitizer</h3>
+                        <h3 class="itemTag">Orange Juice</h3>
                         <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                                 class="bi bi-star"></i><i class="bi bi-star"></i></div>
-                        <span><b>15.00</b></span>
+                        <span><b class="itemPrice">£45.00</b ></span>
                     </div>
                 </li>
-                <li class="card_img_list">
+                <li class="card_img_list itemBox">
                     <div class="card_img">
                         <img src="card_img/red-chillies-400x400.jpg" width="300px" height="300px">
                     </div>
@@ -292,26 +305,26 @@
                         <span>
                             <p>Groceries</p>
                         </span>
-                        <h3>Handpicked Red Chillies</h3>
+                        <h3 class="itemTag">Handpicked Red Chillies</h3>
                         <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                                 class="bi bi-star"></i><i class="bi bi-star"></i></div>
-                        <span><b>£19.00</b></span>
+                        <span><b class="itemPrice">£19.00</b ></span>
                     </div>
                 </li>
-                <li class="card_img_list">
+                <li class="card_img_list itemBox">
                     <div class="card_img">
-                        <a href="product.html"><img src="card_img/edible-oil-400x400.jpg" width="300px" height="300px"></a>
+                        <img src="card_img/edible-oil-400x400.jpg" width="300px" height="300px">
                     </div>
                     <div class="card_info">
                         <span>
                             <p>Groceries</p>
                         </span>
-                        <h3>Natural Extracted Edible Oil</h3>
+                        <h3 class="itemTag">Natural Extracted Edible Oil</h3>
                         <div><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i
                                 class="bi bi-star"></i><i class="bi bi-star"></i></div>
                         <span>
                             <p style="text-decoration: line-through; color: gray; margin-right: 5%; font-weight: 500;">
-                                £17.00</p><b>£25.00</b>
+                                £37.00</p><b class="itemPrice">£25.00</b>
                         </span>
                     </div>
                 </li>
