@@ -24,49 +24,53 @@ itemTag[i].innerText=pTitle.innerText;
   };
 });
 let i=0;
-let sum=0,n;
+let n,sum=0;
 const addToCart = () => {
-  non.innerText='';
-  counter= localStorage.getItem('counter');
-  circle.innerText = ++counter;
-//  localStorage.setItem('cartImg',mainImg.src);
-  cardBox.innerHTML += `<li class="cartList">
-    <a href="" class="" >
-		<img width="70" height="70" src="" class='cardImg'>
-       </a>
-    <div class='cartBox' >
-    <p class='catdTitle'>edible oil</p>
-    <span ><span class="quantity">2 </span> x <bdi class='cartPrice'></bdi>
-    </span>
-    </div>
-</li>`;
-i=localStorage.getItem('value');
-if(i==null){
-  i=0;
-  console.log(i);
-}
-let cardImg=document.querySelectorAll(".cardImg");
-let catdTitle=document.querySelectorAll(".catdTitle");
-let quantity=document.querySelectorAll(".quantity");
-let cartPrice=document.querySelectorAll(".cartPrice")
-quantity[i].innerText=`${quantity_num.value}`;
-catdTitle[i].innerText=pTitle.innerText
-cardImg[i].src=mainImg.src
-// pr=null?pr.innerText=price.innerText:'';
-let h=price.innerText;
-price.firstElementChild!=null?h=price.lastElementChild.innerText:'';
-cartPrice[i].innerText=h;
-sum+=quantity_num.value*Number.parseInt(cartPrice[i].innerText.slice(1));
-total.innerText=`£${sum}.00`;
-localStorage.setItem('total',total.innerText)
-localStorage.setItem(`title${i}`,catdTitle[i].innerText)
-localStorage.setItem(`price${i}`,Number.parseInt(cartPrice[i].innerText.slice(1)*quantity_num.value))
-localStorage.setItem(`quantity_num${i}`,Number.parseInt(quantity_num.value))
-i++;
-localStorage.setItem('value',i)
-str=cardBox.innerHTML;
-localStorage.setItem('ul',str)
-localStorage.setItem('counter',counter)
+    non.innerText='';
+    counter= localStorage.getItem('counter');
+    circle.innerText = ++counter;
+  //  localStorage.setItem('cartImg',mainImg.src);
+    cardBox.innerHTML += `<li class="cartList">
+      <a href="" class="" >
+      <img width="70" height="70" src="" class='cardImg'>
+         </a>
+      <div class='cartBox' >
+      <p class='catdTitle'>edible oil</p>
+      <span ><span class="quantity">2 </span> x <bdi class='cartPrice'></bdi>
+      </span>
+      </div>
+  </li>`;
+  i=localStorage.getItem('value');
+  if(i==null){
+    i=0;
+    console.log(i);
+  }
+  let cardImg=document.querySelectorAll(".cardImg");
+  let catdTitle=document.querySelectorAll(".catdTitle");
+  let quantity=document.querySelectorAll(".quantity");
+  let cartPrice=document.querySelectorAll(".cartPrice")
+  quantity[i].innerText=`${quantity_num.value}`;
+  catdTitle[i].innerText=pTitle.innerText
+  cardImg[i].src=mainImg.src
+  // pr=null?pr.innerText=price.innerText:'';
+  let h=price.innerText;
+  price.firstElementChild!=null?h=price.lastElementChild.innerText:'';
+  cartPrice[i].innerText=h;
+  
+  sum+=(Number.parseInt(quantity_num.value)*Number.parseInt(cartPrice[i].innerText.slice(1)));
+  
+  total.innerText=`£${sum}.00`;
+  localStorage.setItem('total',total.innerText)
+  localStorage.setItem(`title${i}`,catdTitle[i].innerText)
+  localStorage.setItem(`price${i}`,Number.parseInt(cartPrice[i].innerText.slice(1)*quantity_num.value))
+  localStorage.setItem(`quantity_num${i}`,Number.parseInt(quantity_num.value))
+  i++;
+  console.log(quantity_num.value);
+  localStorage.setItem('value',i)
+  str=cardBox.innerHTML;
+  localStorage.setItem('ul',str)
+  localStorage.setItem('counter',counter)
+  
 };
 if(!localStorage.getItem("src")){
   mainImg.src='itemListImg/item-list-6.jpg'
@@ -76,6 +80,3 @@ if(!localStorage.getItem("src")){
   price.innerText=localStorage.getItem('price')
   pTitle.innerText=localStorage.getItem('tag')
 }
-// shop_btn.addEventListener('click',()=>{
-//   n=i;
-// })

@@ -41,7 +41,7 @@ submit_form.addEventListener("click", (e) => {
   submit(e);
 });
 function submit(e) {
-  if ( 1) {
+  if (isRequiredFill()) {
     e.preventDefault();
     checkout_form_box.style.display = "none";
     primary.classList.remove('hide');
@@ -85,7 +85,8 @@ function isRequiredFill() {
       count++;
     }
   }
-  if (count == 10) {
+  if (count == 10 ) {
+
     return true;
   } else {
     return false;
@@ -109,19 +110,20 @@ const formdetail=()=>{
         p_status.innerText='Cash on delivery';
     }
     note.innerText=Order_notes.value;
-    ptotal.innerText=localStorage.getItem('total')
-    pto.innerText=localStorage.getItem('total')
+    
     ts.innerText=ptotal.innerText;
     tt.innerText=ptotal.innerText;
     ttt.innerText=ptotal.innerText;
   //  localStorage.clear()
 }
-// pt.forEach((e,i)=>{
-//   pt[i].innerText=localStorage.getItem(`title${i}`)
-// })
-// pp.forEach((e,i)=>{
-//   pp[i].innerText=`£${localStorage.getItem(`price${i}`)}`
-// })
+ptotal.innerText=localStorage.getItem('total')
+    pto.innerText=localStorage.getItem('total')
+pt.forEach((e,i)=>{
+  pt[i].innerText=localStorage.getItem(`title${i}`)
+})
+pp.forEach((e,i)=>{
+  pp[i].innerText=`£${localStorage.getItem(`price${i}`)}`
+})
 let n=localStorage.getItem('value');
 for (let i = 0; i < n; i++) {
   let tr=document.createElement('tr');

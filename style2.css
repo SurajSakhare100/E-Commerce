@@ -379,6 +379,7 @@ footer .footer_div .link2 h2 {
 }
 
 @media screen and (max-width: 600px) {
+    
     .footerline {
         display: flex;
         flex-wrap: wrap;
@@ -663,6 +664,12 @@ color: white;
     }
     .groceries-sort{
         margin-right: 2%;
+    }
+    .groceries-sort .sortBox {
+        width: auto;
+        height: auto;
+        background-color: #F8F6F3;
+        position:inherit;
     }
    
 }

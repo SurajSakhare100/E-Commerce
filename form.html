@@ -21,7 +21,8 @@
                 <div class="left_nav">
                     <div class="nav_logo">
                         <a href="index.html">
-                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg">
+                            <img
+                                src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg">
 
                         </a>
                     </div>
@@ -39,7 +40,9 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="#" style="color:#94d351;  font-weight: 600;">£0.00</a></li>
-                        <li  id="shop_cart"><a href=""><i  class="bi bi-bag-check-fill green"><div class="circle">0</div></i></a>
+                        <li id="shop_cart"><a href=""><i class="bi bi-bag-check-fill green">
+                                    <div class="circle">0</div>
+                                </i></a>
                         </li>
                         <li><a href=""><i class="bi bi-person-fill " style="font-size: 1.4rem ;"></i></a></li>
                         <li id="menu" class="icon hide"><i class="bi bi-list"></i></li>
@@ -49,16 +52,17 @@
         </div>
         <div id="popbox" class="hide">
             <li id="remove"><i class="bi bi-x"></i></li>
+            <li class="green_tag"><a href="index.html">Home</a></li>
             <li class="green_tag"><a href="groceries.html">Everthing</a></li>
             <li class="green_tag"><a href="groceries.html">Groceries</a> </li>
             <li class="green_tag"><a href="groceries.html">Juice</a> </li>
             <li class="green_tag"><a href="about.html">About</a></li>
             <li class="green_tag"><a href="contact.html">Contact</a></li>
-            <li class="green_tag"><a href="form.html">Form</a></li>
+            <li class="green_tag"><a href="form.html" style="color: #94d351;">Add to Cart</a></li>
 
         </div>
     </nav>
-     <div class="checkout_form_box">
+    <div class="checkout_form_box">
         <h1>Checkout</h1>
         <div id="form_error"></div>
         <div class="checkout_form">
@@ -378,24 +382,24 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td >Total</td>
+                                <td>Total</td>
                                 <td id="pto">£70.00</td>
                             </tr>
                         </tfoot>
                     </table>
-                   
+
                     <div>
-                        <input type="radio" id="check_payment" name="payment_method" value="check" checked >
+                        <input type="radio" id="check_payment" name="payment_method" value="check" checked>
                         <label for="check_payment">check payment</label>
                     </div>
 
                     <div>
-                        <input type="radio" id="cash_on_delivery" name="payment_method" value="cash" >
+                        <input type="radio" id="cash_on_delivery" name="payment_method" value="cash">
                         <label for="cash_on_delivery">Cash on delivery</label>
                     </div>
 
-                  
-                    <button  form="form1" id="submit_form" value="Place Order">Place Order</button>
+
+                    <button form="form1" id="submit_form" value="Place Order">Place Order</button>
                 </div>
 
             </form>
@@ -441,8 +445,7 @@
                                 Date: <strong id="date">January 29, 2024</strong>
                             </li>
                             <li class="">
-                                Total: <strong><span class=""><bdi><span
-                                                id="ttt">£35.00</span></bdi></span></strong>
+                                Total: <strong><span class=""><bdi><span id="ttt">£35.00</span></bdi></span></strong>
                             </li>
                             <li class="" style="border: 0;">
                                 Payment method: <strong id="p_status">Check payments</strong>
@@ -453,7 +456,8 @@
                             <table class="">
                                 <thead>
                                     <tr>
-                                        <th class="strong">Product</th><th class="strong">Total</th>
+                                        <th class="strong">Product</th>
+                                        <th class="strong">Total</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tbdt">
@@ -471,20 +475,18 @@
                                 <tfoot>
                                     <tr>
                                         <th scope="row">Subtotal:</th>
-                                        <td><span class=""><span
-                                                    id="ts"></span></td>
+                                        <td><span class=""><span id="ts"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Total:</th>
+                                        <td><span class=""><span id="tt">35.00</span></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Payment method:</th>
                                         <td id="payment_status">Check payments</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Total:</th>
-                                        <td><span class=""><span
-                                                    id="tt">35.00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th >Note:</th>
+                                        <th>Note:</th>
                                         <td id="note">c</td>
                                     </tr>
                                 </tfoot>
@@ -596,7 +598,7 @@
             </div>
         </div>
     </footer>
-    <script  src="script.js"></script>
+    <script src="script.js"></script>
     <script src="form.js"></script>
 </body>
 
